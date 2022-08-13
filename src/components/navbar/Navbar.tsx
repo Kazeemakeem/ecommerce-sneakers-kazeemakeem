@@ -47,9 +47,8 @@ const Navbar = () => {
         { showNav ? <div className='bg-black/80 fixed w-full h-screen z-10 top-0 left-0'
         onClick={() => setShowNav(!showNav)}></div> : ''}
 
-        {/* side drawer menu */}
-        <div className={ showNav ? 'fixed top-0 left-0 w-[20rem] h-screen bg-white z-10 duration-300' : 
-        'fixed top-0 left-[-100%] w-[20rem] h-screen bg-white z-10 duration-300'}>
+        {/* side drawer menu */}      
+        <div className={`fixed  w-[20rem] h-screen bg-white z-10 duration-300 ${showNav ? 'top-0 left-0' : 'top-0 left-[-100%]'}`}>
           <X onClick={() => setShowNav(!showNav)} size={25} className='absolute right-4 top-4 cursor-pointer' />
           <h2 className='text-left ml-12 text-2xl mt-2 p-4 font-extrabold '>Menu</h2>
           <nav>
