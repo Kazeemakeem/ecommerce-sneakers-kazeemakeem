@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import { useRef } from 'react'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { incrementQtyToOrder, decrementQtyToOrder, updateTotalCartQty, resetQtyToOrder } from './mainContentSlice'
 import { addItem } from '../cart/cartSlice'

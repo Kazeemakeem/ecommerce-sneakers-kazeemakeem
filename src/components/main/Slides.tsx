@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import {useRef} from 'react'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { updateSlideIndex, updatelightboxIndex, incrementSlideIndex, decrementSlideIndex, setLightboxMode, updateCurrProductImg} from './mainContentSlice'
 import { CaretLeft, CaretRight } from 'phosphor-react'

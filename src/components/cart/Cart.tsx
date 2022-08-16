@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { Trash } from 'phosphor-react'
 import { removeItem } from './cartSlice'

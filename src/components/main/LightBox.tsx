@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
 import { updatelightboxIndex, incrementLightboxIndex, decrementLightboxIndex, resetSlideIndices, setLightboxMode} from './mainContentSlice'
 import { X, CaretLeft, CaretRight } from 'phosphor-react'

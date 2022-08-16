@@ -1,5 +1,4 @@
-import React from 'react'
-import { createSlice, PayloadAction } from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
  export type Doc = {
     markedPrice: string | null;

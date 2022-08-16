@@ -1,6 +1,6 @@
-import React, {useState} from 'react'
+import {useState} from 'react'
 import { useAppDispatch, useAppSelector } from '../../app/hooks'
-import { ShoppingCart, List, Trash, X, Package, Info, Phone, GenderMale, GenderFemale } from 'phosphor-react'
+import { ShoppingCart, List, X, Package, Info, Phone, GenderMale, GenderFemale } from 'phosphor-react'
 import Cart from '../cart/Cart'
 import { openCart } from './navbarSlice'
 
@@ -21,11 +21,11 @@ const Navbar = () => {
             onClick={() => setShowNav(!showNav)}/>
             <h1 className='text-gray-800 font-[700] text-5xl tracking-tighter'>sneakers</h1>
             <ul className='hidden sm:flex gap-8 font-bold text-gray-400 text-xl pt-3 h-full'>
-                <li className='cursor-pointer'><a className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>Collections</a></li>
+                <li className='cursor-pointer'><a href='#' className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>Collections</a></li>
                 <li className='cursor-pointer'><a className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>Men</a></li>
-                <li className='cursor-pointer'><a className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>Women</a></li>
-                <li className='cursor-pointer'><a className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>About</a></li>
-                <li className='cursor-pointer'><a className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>Contact</a></li>
+                <li className='cursor-pointer'><a href='#' className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>Women</a></li>
+                <li className='cursor-pointer'><a href='#' className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>About</a></li>
+                <li className='cursor-pointer'><a href='#' className='hover:text-gray-600 active:text-gray-600 active:border-b-2 border-orange-500'>Contact</a></li>
             </ul>
         </div>
         <div className='flex gap-10 items-center'>
@@ -53,11 +53,11 @@ const Navbar = () => {
           <h2 className='text-left ml-12 text-2xl mt-2 p-4 font-extrabold '>Menu</h2>
           <nav>
             <ul className='flex flex-col p-4 text-gray-400 font-bold'>
-              <li className='text-xl py-4 flex'><Package size={20} className='mr-4 cursor-pointer'/><a className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Collections</a></li>
-              <li className='text-xl py-4 flex'><GenderMale size={20} className='mr-4 cursor-pointer'/><a className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Men</a></li>
-              <li className='text-xl py-4 flex'><GenderFemale size={20} className='mr-4 cursor-pointer'/><a className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Women</a></li>
-              <li className='text-xl py-4 flex'><Info size={20} className='mr-4 cursor-pointer'/><a className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>About</a></li>
-              <li className='text-xl py-4 flex'><Phone size={20} className='mr-4 cursor-pointer'/><a className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Contact</a></li>
+              <li className='text-xl py-4 flex'><Package size={20} className='mr-4 cursor-pointer'/><a href='#' className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Collections</a></li>
+              <li className='text-xl py-4 flex'><GenderMale size={20} className='mr-4 cursor-pointer'/><a href='#' className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Men</a></li>
+              <li className='text-xl py-4 flex'><GenderFemale size={20} className='mr-4 cursor-pointer'/><a href='#' className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Women</a></li>
+              <li className='text-xl py-4 flex'><Info size={20} className='mr-4 cursor-pointer'/><a href='#' className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>About</a></li>
+              <li className='text-xl py-4 flex'><Phone size={20} className='mr-4 cursor-pointer'/><a href='#' className='cursor-pointer hover:text-gray-600 active:border-b-2 border-orange-500'>Contact</a></li>
             </ul>
           </nav>
         </div>
